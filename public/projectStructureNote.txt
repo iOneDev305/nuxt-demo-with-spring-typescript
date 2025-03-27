@@ -1,0 +1,48 @@
+/nuxt-app
+ ├── /components       # Vue components (UI elements)
+ │    ├── /ui          # Reusable UI components (buttons, modals, etc.)
+ │    ├── /users       # Components related to users
+ │    ├── Navbar.vue   # Example global component
+ │
+ ├── /composables      # Vue composables (Reusable logic)
+ │    ├── useAuth.ts   # Authentication composable
+ │    ├── useUsers.ts  # Fetch and manage user state
+ │
+ ├── /layouts          # Layouts (default, auth, dashboard)
+ │    ├── default.vue
+ │    ├── auth.vue
+ │
+ ├── /middleware       # Route middleware
+ │    ├── auth.ts      # Auth guard middleware
+ │
+ ├── /pages            # Nuxt pages (Auto-routes)
+ │    ├── index.vue    # Homepage
+ │    ├── about.vue    # Example page
+ │    ├── users.vue    # Users page
+ │
+ ├── /plugins          # Nuxt plugins
+ │    ├── axios.ts     # Axios plugin for API calls
+ │    ├── toast.ts     # Plugin for notifications
+ │
+ ├── /server           # API routes (Nuxt server API)
+ │    ├── /api
+ │    │    ├── users.ts   # API route for users
+ │
+ ├── /stores           # Pinia state management
+ │    ├── userStore.ts # User store
+ │
+ ├── /types            # TypeScript interfaces
+ │    ├── userTypes.ts # User-related types
+ │
+ ├── /utils            # Helper functions
+ │    ├── formatDate.ts # Date formatting utility
+ │
+ ├── /public           # Static assets (favicons, images)
+ │    ├── favicon.ico
+ │
+ ├── app.vue           # Root app component
+ ├── nuxt.config.ts    # Nuxt configuration file
+ ├── tsconfig.json     # TypeScript configuration
+ ├── .eslintrc.js      # ESLint config (for clean code)
+ ├── .prettierrc       # Prettier config (for formatting)
+ ├── package.json      # Project dependencies
